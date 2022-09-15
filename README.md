@@ -52,3 +52,4 @@ Exemplo:
 Valor incorreto: 50,00 
 
 Valor correto: 50.00
+
