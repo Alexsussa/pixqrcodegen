@@ -12,7 +12,7 @@ Pix é um meio de pagamento eletrônico instantâneo e gratuito oferecido pelo [
 
 A Payload do Pix nada mais é que um conjunto de informações necessárias para pagamentos e transferências bancárias que necessita seguir as regras e estar bem formatada para ter sucesso no pagamento ou transferência.
 
-Nesta [API](https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Regulamento_Pix/II_ManualdePadroesparaIniciacaodoPix.pdf), do próprio [Banco Centra do Brasil](https://www.bcb.gov.br/), você estar olhando com mais detalhes como funciona uma Payload Pix.
+Nesta [API](https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Regulamento_Pix/II_ManualdePadroesparaIniciacaodoPix.pdf), do próprio [Banco Centra do Brasil](https://www.bcb.gov.br/), você poderá olhar com mais detalhes como funciona uma Payload Pix.
 
 # Modo de uso
 
