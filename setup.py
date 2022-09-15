@@ -8,7 +8,7 @@ with open('README.md', 'r') as rm:
 
 setup(
     name="pixqrcodegen",
-    version="0.3",
+    version="0.4",
     author="Alex Pinheiro",
     url="https://github.com/Alexsussa/pixqrcodegen",
     packages=['pixqrcodegen'],
