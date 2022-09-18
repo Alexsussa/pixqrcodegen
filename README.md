@@ -21,7 +21,7 @@ Nesta [API](https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Regulament
 from pixqrcodegen import Payload
 
 # Parâmetros necessários
-payload = Payload(nome, chavepix, valor, cidade, txtxId)
+payload = Payload(nome, chavepix, valor, cidade, txtId)
 
 # Chamando a função responsável para gerar a Payload Pix e o QR Code
 payload.gerarPayload()
