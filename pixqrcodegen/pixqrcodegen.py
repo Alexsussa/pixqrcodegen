@@ -52,7 +52,7 @@ class Payload():
 
         self.crc16Code = hex(crc16(str(payload).encode('utf-8')))
 
-        self.crc16Code_formatado = str(self.crc16Code).replace('0x', '').upper()
+        self.crc16Code_formatado = str(self.crc16Code).replace('0x', '').upper().zfill(4)
 
         self.payload_completa = f'{payload}{self.crc16Code_formatado}'
 
