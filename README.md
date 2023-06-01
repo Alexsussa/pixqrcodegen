@@ -61,4 +61,4 @@ Valores corretos: 50.00 ou 50,00
 ___
 ## Agradecimentos
 
-**[@alvfig]**(https://github.com/alvfig) - Obrigado pela alteração do código para string nativa do Python e pela alteração do código CRC16 adicionando zeros para esquerda quando necessário.
+[**@alvfig**](https://github.com/alvfig) - Obrigado pela alteração do código para string nativa do Python e pela alteração do código CRC16 adicionando zeros para esquerda quando necessário.
