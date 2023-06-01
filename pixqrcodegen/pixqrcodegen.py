@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 import crcmod
 import qrcode
 
@@ -10,7 +13,7 @@ class Payload():
         
         self.nome = nome
         self.chavepix = chavepix
-        self.valor = valor
+        self.valor = valor.replace(',', '.')
         self.cidade = cidade
         self.txtId = txtId
 
@@ -21,7 +24,7 @@ class Payload():
         self.txtId_tam = len(self.txtId)
 
         self.merchantAccount_tam = f'0014BR.GOV.BCB.PIX01{self.chavepix_tam:02}{self.chavepix}'
-        self.transactionAmount_tam = f'{self.valor_tam:02}{self.valor}'
+        self.transactionAmount_tam = f'{self.valor_tam:02}{float(self.valor):.2f}'
 
         self.addDataField_tam = f'05{self.txtId_tam:02}{self.txtId}'
 
