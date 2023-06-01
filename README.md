@@ -47,18 +47,18 @@ QR Code é gerado após a criação da Payload do Pix e salvo no diretório de d
 
 Nenhum dos dados podem ter caracteres especiais como acentos ou "ç" ~~e os valores monetários devem ser dividos por ponto (.) e não vírgula (,).~~
 
-~~Exemplo:
+~~Exemplo:~~
 
-~~Valor incorreto: 50,00 
+~~Valor incorreto: 50,00 ~~
 
-~~Valor correto: 50.00
+~~Valor correto: 50.00~~
 
 Os valores monetários podem ser digitados tanto com ponto (.) quanto com vírgula (,).
 
 Exemplo:
 
 Valores corretos: 50.00 ou 50,00
-____________________________________________________
+___
 ## Agradecimentos
 
 **@alvfig** - Obrigado pela alteração do código para string nativa do Python e pela alteração do código CRC16 adicionando zeros para esquerda quando necessário.
