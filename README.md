@@ -49,7 +49,7 @@ Nenhum dos dados podem ter caracteres especiais como acentos ou "ç" ~~e os valo
 
 ~~Exemplo:~~
 
-~~Valor incorreto: 50,00 ~~
+~~Valor incorreto: 50,00~~
 
 ~~Valor correto: 50.00~~
 
@@ -61,4 +61,4 @@ Valores corretos: 50.00 ou 50,00
 ___
 ## Agradecimentos
 
-**@alvfig** - Obrigado pela alteração do código para string nativa do Python e pela alteração do código CRC16 adicionando zeros para esquerda quando necessário.
+**[@alvfig]**(https://github.com/alvfig) - Obrigado pela alteração do código para string nativa do Python e pela alteração do código CRC16 adicionando zeros para esquerda quando necessário.
