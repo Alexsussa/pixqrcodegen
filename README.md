@@ -45,7 +45,7 @@ QR Code é gerado após a criação da Payload do Pix e salvo no diretório de d
 ```
 # Importante
 
-Nenhum dos dados podem ter caracteres especiais como acentos ou "ç" ~~e os valores monetários devem ser dividos por ponto (.) e não vírgula (,).
+Nenhum dos dados podem ter caracteres especiais como acentos ou "ç" ~~e os valores monetários devem ser dividos por ponto (.) e não vírgula (,).~~
 
 ~~Exemplo:
 
