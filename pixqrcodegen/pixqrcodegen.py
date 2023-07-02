@@ -62,9 +62,10 @@ class Payload():
         self.gerarQrCode(self.payload_completa)
 
     
-    def gerarQrCode(self, payload):
+    def gerarQrCode(self, payload, diretorio):
+        dir = os.path.expanduser(diretorio)
         self.qrcode = qrcode.make(payload)
-        self.qrcode.save('pixqrcode.png')
+        self.qrcode.save(os.path.join(dir, 'pixqrcodegen.png'))
         
         return print(payload)
 
