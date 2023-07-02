@@ -6,6 +6,7 @@
 
 import crcmod
 import qrcode
+import os
 
 
 class Payload():
@@ -16,6 +17,7 @@ class Payload():
         self.valor = valor.replace(',', '.')
         self.cidade = cidade
         self.txtId = txtId
+        self.diretorioQrCode = diretorio
 
         self.nome_tam = len(self.nome)
         self.chavepix_tam = len(self.chavepix)
@@ -59,7 +61,7 @@ class Payload():
 
         self.payload_completa = f'{payload}{self.crc16Code_formatado}'
 
-        self.gerarQrCode(self.payload_completa)
+        self.gerarQrCode(self.payload_completa, self.diretorioQrCode)
 
     
     def gerarQrCode(self, payload, diretorio):
