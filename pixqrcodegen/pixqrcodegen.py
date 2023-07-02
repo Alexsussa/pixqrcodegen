@@ -9,7 +9,7 @@ import qrcode
 
 
 class Payload():
-    def __init__(self, nome, chavepix, valor, cidade, txtId):
+    def __init__(self, nome, chavepix, valor, cidade, txtId, diretorio=''):
         
         self.nome = nome
         self.chavepix = chavepix
