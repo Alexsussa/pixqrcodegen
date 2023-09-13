@@ -38,7 +38,7 @@ class Payload:
         payload = (f'000201'  # Payload Format Indicator
                    f'{self.merchant_account}'
                    f'52040000'  # Merchant Category Code
-                   f'5303986'  # Currency Code and Transaction Amount
+                   f'5303986'  # Currency Code
                    f'54{self.valor_tam}{self.valor}'  # Transaction Amount
                    f'5802BR'  # Country Code
                    f'{self.merchant_name}'
@@ -62,8 +62,6 @@ if __name__ == '__main__':
     Payload('Fulano de Tal',
             '123e4567-e12b-12d1-a456-426655440000',
             '0000', 'BRASILIA', '***').gerar_payload()
-
-
 
 
 #  Saída esperada: "00020126580014br.gov.bcb.pix0136123e4567-e12b-12d1-a456-42665544000052040000530398654040000
