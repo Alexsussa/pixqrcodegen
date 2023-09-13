@@ -37,8 +37,9 @@ class Payload:
     def gerar_payload(self):
         payload = (f'000201'  # Payload Format Indicator
                    f'{self.merchant_account}'
-                   f'52{self.transaction_amount}'  # Merchant Category Code
+                   f'52040000'  # Merchant Category Code
                    f'5303986'  # Currency Code and Transaction Amount
+                   f'54{self.valor_tam}{self.valor}'  # Transaction Amount
                    f'5802BR'  # Country Code
                    f'{self.merchant_name}'
                    f'{self.merchant_city}'
@@ -63,6 +64,8 @@ if __name__ == '__main__':
             '0000', 'BRASILIA', '***').gerar_payload()
 
 
-#  Saída esperada: "00020126580014br.gov.bcb.pix0136123e4567-e12b-12d1-a456-4266554400005204000053039865802BR5913
-#                   Fulano de Tal6008BRASILIA62070503***63041D3D"
+
+
+#  Saída esperada: "00020126580014br.gov.bcb.pix0136123e4567-e12b-12d1-a456-42665544000052040000530398654040000
+#                   5802BR5913Fulano de Tal6008BRASILIA62070503***63047596"
 #  Valores conforme exemplo do manual do Banco Central do Brasil
